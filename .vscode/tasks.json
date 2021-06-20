@@ -1,0 +1,198 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello",
+            "group": "none"
+        },
+        {
+            "label": "all",
+            "type": "shell",
+            "command": "${workspaceFolder}/make-wrapper",
+            "args": [
+                "all",
+                "-j4"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            }
+        },
+        {
+            "label": "check",
+            "type": "shell",
+            "command": "${workspaceFolder}/make-wrapper",
+            "args": [
+                "check"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "test",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "clang-tidy",
+            "type": "shell",
+            "command": "${workspaceFolder}/make-wrapper",
+            "args": [
+                "clang-tidy"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "none",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "${workspaceFolder}/make-wrapper",
+            "args": [
+                "clean"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            }
+        },
+        {
+            "label": "clean-lint",
+            "type": "shell",
+            "command": "${workspaceFolder}/make-wrapper",
+            "args": [
+                "clean-lint"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "none",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "target-helgrind",
+            "type": "shell",
+            "command": "${workspaceFolder}/make-wrapper",
+            "args": [
+                "helgrind-target"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "test",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "lint",
+            "type": "shell",
+            "command": "${workspaceFolder}/make-wrapper",
+            "args": [
+                "lint"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "none",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "target-memcheck",
+            "type": "shell",
+            "command": "${workspaceFolder}/make-wrapper",
+            "args": [
+                "memcheck-target"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "test",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "target-nulgrind",
+            "type": "shell",
+            "command": "${workspaceFolder}/make-wrapper",
+            "args": [
+                "nulgrind-target"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "test",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "target-valgrind",
+            "type": "shell",
+            "command": "${workspaceFolder}/make-wrapper",
+            "args": [
+                "valgrind-target"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "test",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "validate",
+            "type": "shell",
+            "command": "${workspaceFolder}/make-wrapper",
+            "args": [
+                "validate"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "none",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

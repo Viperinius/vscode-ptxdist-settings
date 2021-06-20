@@ -1,0 +1,27 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../wago/ptxproj/wago_intern/cpp-helloworld"
+        },
+        {
+            "path": "../wago/ptxproj/wago_intern/cpp-reference"
+        }
+    ],
+    "settings": {
+        "telemetry.enableCrashReporter": false,
+        "workbench.editor.highlightModifiedTabs": true,
+        "files.trimTrailingWhitespace": true,
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.formatOnPaste": true,
+        "git.ignoreLimitWarning": true,
+        "taskExplorer.groupMaxLevel": 3,
+        "taskExplorer.pathToMake": "${workspaceFolder}/make-wrapper",
+        "C_Cpp.autocompleteAddParentheses": true,
+        "C_Cpp.default.compilerPath": "/opt/gcc-Toolchain-2019.12/arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++",
+        "C_Cpp.default.cppStandard": "c++14",
+        "C_Cpp.default.intelliSenseMode": "linux-gcc-arm",
+    }
+}

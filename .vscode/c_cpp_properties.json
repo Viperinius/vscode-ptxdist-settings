@@ -1,0 +1,22 @@
+{
+    "env": {
+        "compilerPath": "/opt/gcc-Toolchain-2019.12/arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++",
+        "selectedPlatform": "platform-wago-pfcXXX"
+    },
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../../${selectedPlatform}/sysroot-target/include/**",
+                "${workspaceFolder}/../../${selectedPlatform}/sysroot-target/usr/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "${compilerPath}",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}
