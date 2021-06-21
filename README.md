@@ -17,3 +17,5 @@ Some extensions that are needed or suggested:
 - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
 Note: With SVN, you should check that the svn binary is found or set it to the right version if using multiple (e. g. with a changeroot). This configuration can only be done on user settings level, so this is not included in the example workspace.
+
+The general telemetry setting is also only managed on the user level and needs to be set yourself (by setting telemetry.enableTelemetry to false).
